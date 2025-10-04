@@ -24,23 +24,27 @@ body {
 img.background_image {
     width: 1920px;
     height: 1080px;
-    max-width: 100vw;
     object-fit: cover; 
     display: block;
-    position: fixed;
+    position: absolute;
     opacity: 0.2;
     background-size: cover;
     background-repeat: no-repeat;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* HEADER */
 header {
     backdrop-filter: blur(37.7px);
-    position: relative;
+    position: fixed;
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0px;
+    width: 100vw;
 }
 h1.title {
     background: linear-gradient(to right, var(--linear_gradient1), var(--linear_gradient2));
@@ -50,7 +54,7 @@ h1.title {
     -webkit-text-fill-color: transparent;
     display: block;     /* mais coerente com width total */
     margin: 0;
-    padding: 10px;
+    padding-left: 30px;
     text-align: left;
     font-family: "Delius", cursive;
     font-style: normal;
@@ -61,6 +65,7 @@ div.links_container {
     align-items: center;
     justify-content: space-around;
     width: 500px;
+    padding-right: 30px;
 }
 .link_container_paths {
     text-decoration: none;
@@ -73,10 +78,6 @@ div.links_container {
 }
 .title_link {
     text-decoration: none;
-}
-
-.button_calculator {
-
 }
 
 /* CSS */
@@ -104,13 +105,14 @@ div.links_container {
   transform: scale(1.05) rotate(-1deg);
 }
 
-/* Main */
+/* Main Section main_text */
 .main_text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    padding-bottom: 620px;
+    padding-top: 90px;
 }
 #main_text_central {
     color: black;
@@ -143,3 +145,42 @@ div.links_container {
     font-weight: 400;
     line-height: normal;
 }
+
+/* Main Section secondary_texts */
+.main_broader_division {
+    display: flex;
+    flex-direction: column;
+}
+.secondary_text {
+    position: static;
+    width: 1920px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+
+
+}
+.title_and_bulb_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.bulb_icon {
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.image_frames {
+    border-radius: 10px;
+    width: 608px;
+    height: 411px;
+}
+
+
