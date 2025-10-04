@@ -11,7 +11,12 @@
     --linear_gradient1: #004B09;
     --linear_gradient2: #00B22F;
 }
+html { 
+    scroll-behavior:smooth; 
+}
+
 /* BODY */
+
 body {
     height: 100vh;
     width: 100vw;
@@ -45,6 +50,7 @@ header {
     justify-content: space-between;
     margin-top: 0px;
     width: 100vw;
+    z-index: 1000;
 }
 h1.title {
     background: linear-gradient(to right, var(--linear_gradient1), var(--linear_gradient2));
@@ -60,7 +66,7 @@ h1.title {
     font-style: normal;
 }
 
-div.links_container {
+nav.links_container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -70,10 +76,11 @@ div.links_container {
 .link_container_paths {
     text-decoration: none;
     color: rgb(78, 78, 78);
+    text-align: center;
 }
 .link_container_paths:hover {
     text-decoration: none;
-    color: #263b2a;
+    color: var(--linear_gradient1);
     transform: scale(1.05);
 }
 .title_link {
@@ -107,12 +114,15 @@ div.links_container {
 
 /* Main Section main_text */
 .main_text {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 620px;
-    padding-top: 90px;
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+
 }
 #main_text_central {
     color: black;
@@ -151,17 +161,26 @@ div.links_container {
     display: flex;
     flex-direction: column;
 }
+
 .secondary_text {
     position: static;
-    width: 1920px;
-    padding-top: 100px;
+    display: flex;
     padding-bottom: 100px;
     padding-left: 100px;
     padding-right: 100px;
-    display: flex;
-
-
 }
+#complementary_texts_section_2 {
+    display: flex;
+    flex-direction: column;
+}
+#secondary_text_alimento {
+    width: min(100%, 1920px);
+    margin: 0 auto;
+    margin-top: 30rem;
+    padding: 100px;
+    display: flex;
+}
+
 .title_and_bulb_icon {
     display: flex;
     align-items: center;
