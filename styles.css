@@ -18,39 +18,34 @@ html {
 /* BODY */
 
 body {
-    height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-    background-color: var(--color1);
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: minmax(0,1fr);
+    grid-template-rows: min-content min-content 1fr min-content;
+    margin: 0;
+    margin-inline: auto;
+    min-height: 100svh;
+    background: url("./assets/wallpaper-2.png") center/cover no-repeat ;
+    background-size: 100svw 100svh;
+    background-position: 0% 0%;
+    background-blend-mode: lighten;
 }
 
-/* BACKGROUND */
-img.background_image {
-    width: 1920px;
-    height: 1080px;
-    object-fit: cover; 
-    display: block;
-    position: absolute;
-    opacity: 0.2;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
 
 /* HEADER */
 header {
     backdrop-filter: blur(37.7px);
     position: fixed;
+    top: 0;
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 0px;
     width: 100vw;
     z-index: 1000;
+    gap: 475px;
 }
 h1.title {
     background: linear-gradient(to right, var(--linear_gradient1), var(--linear_gradient2));
@@ -87,7 +82,6 @@ nav.links_container {
     text-decoration: none;
 }
 
-/* CSS */
 .button-33 {
   background-color: #c2fbd7;
   border-radius: 100px;
@@ -106,7 +100,6 @@ nav.links_container {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 .button-33:hover {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
@@ -119,16 +112,14 @@ nav.links_container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 15%;
-
+    height: 100svh;
+    width: 100svw;
 }
 #main_text_central {
     color: black;
     text-align: center;
     font-family: "Doppio One";
-    font-size: 96px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -162,29 +153,29 @@ nav.links_container {
     flex-direction: column;
 }
 
-.secondary_text {
-    position: static;
-    display: flex;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-#complementary_texts_section_2 {
+#complementary_texts_section {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
 }
+
 #secondary_text_alimento {
-    width: min(100%, 1920px);
     margin: 0 auto;
-    margin-top: 30rem;
-    padding: 100px;
+    padding-bottom: 0px;
+    padding-top: 100px;
     display: flex;
+    justify-content: center;
 }
 
 .title_and_bulb_icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 600px;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 0;
     
 }
 .bulb_icon {
@@ -196,10 +187,35 @@ nav.links_container {
     -webkit-user-select: none;
     user-select: none;
 }
+.bulb_icon:hover {
+    height: 75px;
+    width: 75px;
+    padding-left: 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
 .image_frames {
     border-radius: 10px;
     width: 608px;
     height: 411px;
 }
 
+.title_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #000;
 
+}
+.title_text_text {
+    font-family: Archivo;
+    font-size: clamp(1rem, 0.9rem + 1vw, 1.5rem);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    height: 300px;
+    width: 600px;
+    padding: 50px;
+    text-align: justify;
+}
