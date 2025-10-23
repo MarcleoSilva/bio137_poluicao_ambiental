@@ -205,8 +205,6 @@ nav.links_container {
 .bulb_icon:hover + #hidden_text {
     visibility: visible;
     opacity: 1;
-
-
 }
 .image_frames {
     border-radius: 10px;

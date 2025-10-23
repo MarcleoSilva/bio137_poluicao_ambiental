@@ -70,6 +70,77 @@ h1.title {
   transform: scale(1.05) rotate(-1deg);
 }
 
+/* MAIN */
+#background_block {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+#main_background_image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    transform: scale(var(--zoom,1));
+    will-change: transform;
+}
+
+/* Main Section main_text */
+.main_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    width: 100svw;
+    gap: 3%;
+}
+
+#main_text_central {
+    color: black;
+    text-align: center;
+    font-family: "Doppio One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#poluicao_ambiental_colorido {
+    background: linear-gradient(90deg, var(--linear_gradient1), var(--linear_gradient1), var(--linear_gradient2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Doppio One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#poluicao_ambiental_subtitulo {
+    color: black;
+    text-align: center;
+    font-family: "Doppio One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Main Section secondary_texts */
+.main_broader_division {
+}
+
+.complementary_texts_section {
+}
+
+.image_frames {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    aspect-ratio: 608 / 411;
+}
 @media only screen and (max-width: 810px) {
     /* HEADER */
     header{
@@ -87,8 +158,38 @@ h1.title {
         justify-content: space-around;
     }
 
+    /* Main Section main_text */
+    #main_text_central {
+        font-size: 200%;
+    }
+    #poluicao_ambiental_subtitulo {
+        font-size: 95%;
+    }
+
+    /* Main Section secondary_texts */
+    .bulb_icon {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    #complementary_texts_section {
+        display: grid;
+        
+    }
+    .image_frames {
+        width: 60%;
+    }
+    .secondary_text {
+        padding-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 @media only screen and (min-width: 810px) {
+    /* HEADER */
     header{
         display: flex;
         align-items: center;
@@ -106,5 +207,71 @@ h1.title {
         width: 50vw;
         font-size: 120%
     }
-}
 
+    /* Main Section main_text */
+    #main_text_central {
+        font-size: 300%;
+    }
+    #poluicao_ambiental_subtitulo {
+        font-size: 130%;
+    }
+
+    /* Main Section secondary_texts */
+    #complementary_texts_section {
+        display: grid;
+    }
+    .image_frames {
+        width: 100%;
+        height: 100%;
+    }
+    .secondary_text {
+        display: flex;
+        align-items: left;
+        gap: 1%;
+        padding: 12vh 10% 0 10%;
+    }
+    .title_text {
+        width: 100vw;
+        height: 30vh;
+    }
+    .title_and_bulb_icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.5%;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .bulb_icon {
+        width: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        position: relative;
+    }
+    #hidden_text {
+        visibility: hidden; 
+        opacity: 0; 
+        position: absolute;
+        margin: 75px;
+        backdrop-filter: blur(37.7px);
+        color:black;
+        border-radius: 10% / 70%;
+        padding: 15px;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+    }
+
+    .bulb_icon:hover + #hidden_text {
+        visibility: visible;
+        opacity: 1;
+    }
+    .title_text_text {
+        width: 50vw;
+        font-size: 1.7vw;
+    }
+}
