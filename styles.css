@@ -130,11 +130,6 @@ h1.title {
 }
 
 /* Main Section secondary_texts */
-.main_broader_division {
-}
-
-.complementary_texts_section {
-}
 
 .image_frames {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -177,7 +172,7 @@ h1.title {
         
     }
     .image_frames {
-        width: 60%;
+        width: 75%;
     }
     .secondary_text {
         padding-top: 15%;
@@ -195,6 +190,7 @@ h1.title {
     #hidden_text{
         color: grey;
         justify-content: center;
+        font-size: xx-small;
     }
     .title_text_title {
         padding-top: 1%;
@@ -202,7 +198,7 @@ h1.title {
     .title_text_text {
         margin: 0 10% 0 10%;
         text-align: center;
-        font-size: 110%;
+        font-size: 100%;
     }
 
 
@@ -293,4 +289,9 @@ h1.title {
         width: 50vw;
         font-size: 1.7vw;
     }
+    .image_frames:hover {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+}
 }
