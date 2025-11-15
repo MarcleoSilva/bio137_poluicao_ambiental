@@ -72,13 +72,36 @@
 
             </section>
         </div>
-            <section class="calculator">
-                <script src="main.js"></script>
-            </section>
+            <div class="calculator">
+                <div id="titulo_subtitulo">
+                    <h1>Calculador de dieta</h1>
+                    <h6>Agora, vamos entender o peso da nossa dieta no mundo?</h6>
+                </div>
+                <div id="bloco_calculadora">
+                    <div id="calculation">
+                        <h1>Suas refeições semanais</h1>
+                        <div id="slidebars">
+                            <label for="carne_slide">Carnes e peixes (<output id="carne_value"></output>)</label>
+                            <input type="range" 
+                                class="range_input" 
+                                id="carne" 
+                                name="carne_slide" 
+                                min="0" 
+                                max="14">
+                        </div>
+                    </div>
+                    <div id="results">
+                        <p><output id="total_consumption"></output></p>
+
+                    </div>
+
+                </div>
+                
+            </div>
     </main>
     <footer>
         
     </footer>
-
+    <script src="main.js"></script>
 </body>
 </html>
