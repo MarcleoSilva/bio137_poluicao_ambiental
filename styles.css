@@ -136,6 +136,49 @@ h1.title {
     border-radius: 10px;
     aspect-ratio: 608 / 411;
 }
+
+/* CALCULATOR */
+
+.calculator {
+    background-color: rgb(244, 245, 255);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: black;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    width: 50vw;
+    transform: translate(-50%, 30%);
+    left: 50%;
+    font-family: "Doppio One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.titulo_subtitulo {
+    display:grid;
+}
+.titulo_subtitulo h1 {
+    font-size: 5vw;
+    justify-self: center;
+}
+.titulo_subtitulo h6 {
+    font-size: 1vw;
+    justify-self: center;
+}
+
+/* Slide part */
+.bloco_calculadora {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results {
+    background-color: #ffffff;
+}
+
 @media only screen and (max-width: 810px) {
     /* HEADER */
     header{
@@ -295,3 +338,6 @@ h1.title {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
 }
 }
+
+
+
