@@ -137,8 +137,6 @@ h1.title {
     aspect-ratio: 608 / 411;
 }
 
-/* CALCULATOR */
-
 
 @media only screen and (max-width: 810px) {
     /* HEADER */
@@ -253,7 +251,7 @@ h1.title {
     .range_input{
     -webkit-appearance: none;
     border-radius: 5px;  
-    background: #000000;
+    background: #00000059;
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -281,6 +279,10 @@ h1.title {
     background-size: cover;
     border: none;
     cursor: pointer;
+    }
+
+    .left-side-calculator {
+        width: 35vw;
     }
     .left-side-calculator h1 {
         font-size: 2vw;
@@ -425,7 +427,7 @@ h1.title {
         justify-self: center;
     }
     .titulo_subtitulo h6 {
-        font-size: 1vw;
+        font-size: 1.5vw;
         justify-self: center;
     }
 
@@ -439,13 +441,12 @@ h1.title {
     .range_input{
     -webkit-appearance: none;
     border-radius: 5px;  
-    background: #000000;
+    background: #00000059;
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
     height: 5px;
     margin-top: 5%;
-    
     }
 
     .range_input::-webkit-slider-thumb {
@@ -453,8 +454,8 @@ h1.title {
     appearance: none;
     border-radius: 50%; 
     background: url('assets/globe.png');
-    width: 20px;
-    height: 20px;
+    width: 2.5vw;
+    height: 2.5vw;
     background-size: cover;
     cursor: pointer;
     }
@@ -462,11 +463,14 @@ h1.title {
     .range_input::-moz-range-thumb {
     border-radius: 50%;
     background: url('assets/globe.png');
-    width: 23px;
-    height: 23px;
+    width: 2.5vw;
+    height: 2.5vw;
     background-size: cover;
     border: none;
     cursor: pointer;
+    }
+    .left-side-calculator {
+        width: 30vw;
     }
     .left-side-calculator h1 {
         font-size: 2vw;
@@ -479,10 +483,14 @@ h1.title {
         align-items: center;
         justify-content: space-between;
     }
+    .range_label {
+        font-size: 1.8vw;
+    }
 
     .results {
         padding-left: 3%;
         padding-right: 5%;
+        font-size: 1.5vw;
     }
 }
 
