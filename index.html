@@ -79,40 +79,42 @@
                 </div>
                 <div class="bloco_calculadora">
                     <div class="calculation">
-                        <h1>Suas refeições semanais</h1>
-                        <div class="slidebars">
-                            <div>
-                                <label class="range_label" for="carne_slide">🍖 Carnes e peixes (100g) (<output id="carne_value"></output>)</label>
-                                <input type="range" 
-                                    class="range_input" 
-                                    id="carne" 
-                                    name="carne_slide" 
-                                    min="0" 
-                                    max="14">
-                            </div>
-                            <div>
-                                <label class="range_label" for="frutas_slide">🍇Frutas (80g) (<output id="frutas_value"></output>)</label>
-                                <input type="range" 
-                                    class="range_input" 
-                                    id="frutas" 
-                                    name="frutas_slide" 
-                                    min="2" 
-                                    max="14">
-                            </div>
-                            <div>
-                                <label class="range_label" for="vegetais_slide">🥕 Vegetais e grãos (120g) (<output id="vegetais_value"></output>)</label>
-                                <input type="range" 
-                                    class="range_input" 
-                                    id="vegetais" 
-                                    name="vegetais_slide" 
-                                    min="5" 
-                                    max="25">
+                        <div class="left-side-calculator">
+                            <h1>Suas refeições semanais</h1>
+                            <div class="slidebars">
+                                <div class="individual-calc">
+                                    <label class="range_label" for="carne_slide">🍖 Carnes e peixes (100g) (<output id="carne_value"></output>)</label>
+                                    <input type="range" 
+                                        class="range_input" 
+                                        id="carne" 
+                                        name="carne_slide" 
+                                        min="0" 
+                                        max="14">
+                                </div>
+                                <div class="individual-calc">
+                                    <label class="range_label" for="frutas_slide">🍇Frutas (80g) (<output id="frutas_value"></output>)</label>
+                                    <input type="range" 
+                                        class="range_input" 
+                                        id="frutas" 
+                                        name="frutas_slide" 
+                                        min="2" 
+                                        max="14">
+                                </div>
+                                <div class="individual-calc">
+                                    <label class="range_label" for="vegetais_slide">🥕 Vegetais e grãos (120g) (<output id="vegetais_value"></output>)</label>
+                                    <input type="range" 
+                                        class="range_input" 
+                                        id="vegetais" 
+                                        name="vegetais_slide" 
+                                        min="5" 
+                                        max="25">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <h1 id="converts">Equivale a:</h1>
                     <div class="results">
                         <p><output id="total_consumption"></output></p>
-
                     </div>
 
                 </div>

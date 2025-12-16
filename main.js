@@ -59,7 +59,7 @@ function calcular() {
 }
 console.log(calcular());
 
-let calculationOfConsumption = calcular() + " kgCO₂e/semana";
+let calculationOfConsumption = calcular() + " kgCO₂/semana";
 outputCalculation.textContent = calculationOfConsumption;
 
 rangeInput.forEach((element) => {
@@ -68,7 +68,7 @@ rangeInput.forEach((element) => {
     element.addEventListener("input", e =>{
 
         console.log("oi");
-        calculationOfConsumption = calcular() + " kgCO₂e/semana";
+        calculationOfConsumption = calcular() + " kgCO₂/semana";
 
         outputCalculation.textContent = calculationOfConsumption;
     })
